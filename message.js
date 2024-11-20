@@ -13,7 +13,7 @@ function PostMessage(){
     const button = document.getElementById('btn');
     button.setAttribute('disabled', '');
     setInner("btn","Loading...");
-    let target_url = "https://api.wa.my.id/api/send/message/text";
+    let target_url = "https://api.wa.my.id/api/v2/send/message/text";
     let tokenkey = "token";
     let tokenvalue = getCookie("login");
     let datainjson = {
