@@ -1,6 +1,6 @@
-import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
-import {setInner,getValue} from "https://jscroot.github.io/element/croot.js";
-import { postJSON } from "https://jscroot.github.io/api/croot.js";
+import { getCookie } from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.1.6/cookie.js";
+import {setInner,getValue} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.1.6/element.js";
+import { postJSON } from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.1.6/api.js";
 
 let token=getCookie("login");
 if (token === ""){
