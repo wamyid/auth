@@ -3,7 +3,7 @@ import {setInner} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.1.6/element.js
 import { getCookie } from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.1.6/cookie.js";
 
 
-let urldevice = "https://api.wa.my.id/api/device/"+getCookie("login");
+let urldevice = "https://apk.fly.dev/api/device/"+getCookie("login");
 
 export default function StartDevice(){
     const button = document.getElementById('btn');
