@@ -2,16 +2,16 @@ import {setInner,getValue} from "https://jscroot.github.io/element/croot.js";
 import { getCookie } from "https://jscroot.github.io/cookie/croot.js";
 import { get } from "https://jscroot.github.io/api/croot.js";
 
-let urlstartdevice = "https://api.wa.my.id/api/start/device/"+getCookie("login");
+let urldevice = "https://api.wa.my.id/api/device/"+getCookie("login");
 
 export default function StartDevice(){
     const button = document.getElementById('btn');
     button.setAttribute('disabled', '');
     setInner("btn","Loading...");
-    get(urlstartdevice,responseStartDevice);
+    get(urldevice,responseDevice);
 }
 
-function responseStartDevice(result){
+function responseDevice(result){
     setInner("ket",result.message);
     setInner("btn",result.message);
     if (result.status){
@@ -44,3 +44,4 @@ function updateCanvas(text,c) {
     ctx.fillText(text, 150, 100);
     console.log(ctx.measureText(text).width);
   }
+
